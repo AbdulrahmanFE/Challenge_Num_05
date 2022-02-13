@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: center;
     min-height: 78vh; /* min-height: 100vh; */
-    margin-top: 100px;
+    margin-top: 110px;
     width: 100%;
     background-color: var(--VeryLightGray);
   }
@@ -83,10 +83,10 @@
     margin-top: 80px;
     background-color: var(--VeryLightGray);
     border: 2px solid var(--VeryLightGray);
-    font-size: 0.9375rem;
+    font-size: 1rem;
     font-family: 'Lexend Deca';
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 10px 30px;
+    border-radius: 30px;
     width: fit-content;
     transition: 0.3s;
   }
