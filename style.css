@@ -1,0 +1,100 @@
+/* Start Variables */
+  :root {
+    /* Primary */
+      --BrightOrange: hsl(31, 77%, 52%);
+      --DarkCyan: hsl(184, 100%, 22%);
+      --VeryDarkCyan: hsl(179, 100%, 13%);
+    /* Neutral */
+      --TransparentWhite: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+      --VeryLightGray: hsl(0, 0%, 95%); /* background, headings, buttons */
+  }
+/* End Variables */
+/* Start Global Rules */
+  * {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--VeryLightGray);
+  }
+/* End Global Rules */
+/* Start The Columns Preview Card */
+  .container {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  @media (max-width: 767px) {
+    .container {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      margin: 40px 20px;
+    }
+  }
+  .box {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .box.sedans {
+    background-color: var(--BrightOrange);
+  }
+  .box.suv {
+    background-color: var(--DarkCyan);
+  }
+  .box.luxury {
+    background-color: var(--VeryDarkCyan);
+  }
+  .title {
+    color: var(--VeryLightGray);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.3125rem;
+    margin-top: 30px;
+  }
+  .description {
+    color: var(--TransparentWhite);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 25px;
+    margin-top: 20px;
+  }
+  button {
+    margin-top: 60px;
+    background-color: var(--VeryLightGray);
+    border: 2px solid var(--VeryLightGray);
+    font-size: 0.9375rem;
+    font-family: 'Lexend Deca';
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .box.sedans button {
+    color: var(--BrightOrange);
+  }
+  .box.suv button {
+    color: var(--DarkCyan);
+  }
+  .box.luxury button {
+    color: var(--VeryDarkCyan);
+  }
+  .box.sedans button:hover,
+  .box.suv button:hover,
+  .box.luxury button:hover{
+    background-color: transparent;
+    color: var(--VeryLightGray);
+  }
+/* End The Columns Preview Card */
