@@ -28,20 +28,20 @@
 /* End Global Rules */
 /* Start The Columns Preview Card */
   .container {
-    max-width: 900px;
+    max-width: 920px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     border-radius: 10px;
     overflow: hidden;
   }
   @media (max-width: 767px) {
     .container {
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      margin: 40px 20px;
+      margin: 50px 25px;
     }
   }
   .box {
-    padding: 45px;
+    padding: 48px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -71,7 +71,7 @@
     margin-top: 20px;
   }
   button {
-    margin-top: 60px;
+    margin-top: 100px;
     background-color: var(--VeryLightGray);
     border: 2px solid var(--VeryLightGray);
     font-size: 0.9375rem;
