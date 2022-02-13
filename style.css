@@ -17,13 +17,22 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
+  a {
+    text-decoration: none;
+  }
   body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 78vh;/* min-height: 100vh; */
+    margin-top: 100px;
     width: 100%;
     background-color: var(--VeryLightGray);
+  }
+  @media (max-width: 767px) {
+    body{
+      margin-top: 0;
+    }
   }
 /* End Global Rules */
 /* Start The Columns Preview Card */
@@ -60,7 +69,7 @@
     color: var(--VeryLightGray);
     text-transform: uppercase;
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 2.35rem;
+    font-size: 2.38rem;
     margin-top: 30px;
   }
   .description {
@@ -70,7 +79,7 @@
     line-height: 25px;
     margin-top: 20px;
   }
-  button {
+  .button {
     margin-top: 80px;
     background-color: var(--VeryLightGray);
     border: 2px solid var(--VeryLightGray);
@@ -79,26 +88,25 @@
     padding: 10px 20px;
     border-radius: 25px;
     width: fit-content;
-    cursor: pointer;
     transition: 0.3s;
   }
-  .box.sedans button {
+  .box.sedans .button {
     color: var(--BrightOrange);
   }
-  .box.suv button {
+  .box.suv .button {
     color: var(--DarkCyan);
   }
-  .box.luxury button {
+  .box.luxury .button {
     color: var(--VeryDarkCyan);
   }
-  .box.sedans button:hover,
-  .box.suv button:hover,
-  .box.luxury button:hover{
+  .box.sedans .button:hover,
+  .box.suv .button:hover,
+  .box.luxury .button:hover{
     background-color: transparent;
     color: var(--VeryLightGray);
   }
   @media (max-width: 767px) {
-    button {
+    .button {
       margin-top: 25px;
     }
   }
