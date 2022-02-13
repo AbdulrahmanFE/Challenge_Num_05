@@ -60,7 +60,7 @@
     color: var(--VeryLightGray);
     text-transform: uppercase;
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 2.3125rem;
+    font-size: 2.35rem;
     margin-top: 30px;
   }
   .description {
@@ -71,7 +71,7 @@
     margin-top: 20px;
   }
   button {
-    margin-top: 100px;
+    margin-top: 80px;
     background-color: var(--VeryLightGray);
     border: 2px solid var(--VeryLightGray);
     font-size: 0.9375rem;
@@ -96,5 +96,10 @@
   .box.luxury button:hover{
     background-color: transparent;
     color: var(--VeryLightGray);
+  }
+  @media (max-width: 767px) {
+    button {
+      margin-top: 25px;
+    }
   }
 /* End The Columns Preview Card */
